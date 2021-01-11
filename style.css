@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 3px solid black; */
+
+}
+li,a,span {list-style: none; text-decoration:none; }
+header {
+    width: 100%;
+    /* border: 1px solid black; */
+    /* position: relative; */
+   position: fixed;
+    /* margin: ; */
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+nav.menu {
+    min-height: 10vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 100%;
+    /* position: relative; */
+}
+nav.menu ul {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav.menu ul li  {
+     margin: 20px;
+    /* font-weight: 600; */
+    /* border: 1px solid red; */
+}
+nav.menu ul li a {
+  color: white;
+    font-weight: 900;
+    background:rgba(246, 123, 137, 1);
+    padding: 5px;
+    border-radius: 5px;
+}
+nav.menu ul li a:hover {
+    background: #344817;
+    transition: all 0.5s ease-in-out;
+}
+.content {
+    width: 100%;
+    height: 90vh;
+    /* border: 3px solid black; */
+    position: relative;
+    /* position: absolute; */
+    left: 0px;
+    top: 80px;
+    margin: 15px 0 0 0;
+    z-index: -1;
+
+}
+.artdesign {
+    width: 50%;
+    /* border: 3px solid black; */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+.design {
+    /* border: 3px solid black; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50vh;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.worddesgin {
+    display: inline-block;
+    padding: 10px;
+    background: #344817;
+    color: white;
+    border-radius: 5px;
+    /* margin-top: 100px; */
+    
+}
+.artdesign h1 {
+    /* border: 3px solid black; */
+    width: 100%;
+    /* text-align:center; */
+
+
+}
+.artdesigntext {
+    max-width: 100%;
+    letter-spacing: 1px;
+    animation-name: wordslater;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+    animation-fill-mode: none;
+    animation-timing-function: ease;
+    /* transform: translateX(200%);   */
+     /* transition: all 10s ease; */
+}
+@keyframes wordslater {
+
+    100% {
+        /* background: green; */
+        transform: translateX(0%);
+     
+    }
+}
+button {
+    /* border: 3px solid black; */
+    margin: 0 auto;
+    /* margin-top: 30px; */
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    /* background:rgb(214, 23, 45); */
+    background: #344817;
+
+    color: white;
+    font-weight: 500;
+    outline: none;
+}
+.image {
+    /* border: 1px solid black; */
+        width: 50%;
+    background:rgba(246, 123, 137, 1);
+    height: 100vh;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    clear: both;;
+    /* flex: 2; */
+    background-image: url('./pexels-photo-3094218.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-origin: content-box;
+}
+
+
+button:hover {
+    background: #344817;
+    transition: background 0.6s ease-in;
+}
+.twosection {
+    width: 100%;
+    height: 100vh;
+    background:#B6A088;
+    position: absolute;
+    /* margin-bottom: 20%; */
+    left: 0;
+    /* top */
+}
+.webdesigncontent {
+    width: 50%;
+    margin: 30px auto;
+    /* max-height: ; */
+}
+.webdesigncontent h2 {
+    text-align: center;
+    /* border: 1px solid black; */
+    color: black;
+    /* color: white; */
+    margin: 30px;
+}
+.webdesigncontent p {
+    /* border: 1px solid black; */
+    /* background: #ffffff; */
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    letter-spacing: 0.2em;
+    max-height: 500px;
+    overflow-y: hidden;
+}
